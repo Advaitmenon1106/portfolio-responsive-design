@@ -38,17 +38,16 @@
   font-family: "Roboto", "Times New Roman", Times, serif;
   position: absolute;
   z-index: 1;
-  width: 23em;
   height: auto;
   max-width: 23em;
   background-color: white;
   color: rgb(107, 106, 106);
-  left: 30vw;
+  left: 43vw;
   line-height: 1.5;
   font-size: 1.8em;
   top: 15vh;
   box-shadow: 5px 5px 10px -3px rgb(29, 29, 29);
-  padding: 2% 2% 7% 5%;
+  padding: 2% 2% 4% 7%;
 }
 
 #blue-triangle {
@@ -88,11 +87,40 @@
   fill: rgb(64, 179, 224);
 }
 
+#content {
+  position: relative;
+  top: 60vh;
+}
+
+#grid-div {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  box-shadow: 5px 5px 10px 0.5px rgb(101, 101, 101);
+}
+
 @media (max-device-width: 768px) {
   .about-me {
     box-shadow: none;
     left: 0;
     top: 45vh;
     font-size: 3vw;
+  }
+
+  #grid-div {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .card {
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 10px 0.5px rgb(101, 101, 101);
   }
 }
