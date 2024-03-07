@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.blue-div {
+  /* flex: 1; */
+  background-color: #0891b2;
+  width: 100vw;
+  height: 30vh;
+  position: relative;
+}
+
+.white-div {
+  transform-origin: top;
+  z-index: -1;
+  transform-origin: bottom;
+  transform: skewY(-1.8deg);
+  border-right: 20px solid red;
+  /* transform: skewX(50deg); */
+  background-color: white;
+
+  /* border: ; */
+}
+
+#about-me-heading {
+  font-size: 1.7em;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 450;
+  color: black;
+  margin-bottom: 5%;
+}
+
+.about-me {
+  font-family: "Roboto", "Times New Roman", Times, serif;
+  position: absolute;
+  z-index: 1;
+  width: 23em;
+  height: auto;
+  max-width: 23em;
+  background-color: white;
+  color: rgb(107, 106, 106);
+  left: 30vw;
+  line-height: 1.5;
+  font-size: 1.8em;
+  top: 15vh;
+  box-shadow: 5px 5px 10px -3px rgb(29, 29, 29);
+  padding: 2% 2% 7% 5%;
+}
+
+#blue-triangle {
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-left: 0 solid #0891b2;
+  border-right: 100vw solid transparent;
+  border-top: 15vh solid #0891b2;
+  border-bottom: 0 solid transparent;
+  top: 30vh;
+}
+
+#logos {
+  display: flex;
+  max-height: 10vh;
+  max-width: 10vw;
+}
+
+#github-logo,
+#linkedin-logo,
+#twitter-logo {
+  height: auto;
+}
+
+#github-logo {
+  flex: 1;
+}
+
+#linkedin-logo {
+  flex: 1;
+  fill: darkblue;
+}
+
+#twitter-logo {
+  flex: 1;
+  fill: rgb(64, 179, 224);
+}
+
+@media (max-device-width: 768px) {
+  .about-me {
+    box-shadow: none;
+    left: 0;
+    top: 45vh;
+    font-size: 3vw;
+  }
+}
